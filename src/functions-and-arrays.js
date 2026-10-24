@@ -1,5 +1,11 @@
 // Iteration 1 | Find the Maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+   return Math.max(num1, num2); 
+} 
+
+console.log(maxOfTwoNumbers(9, 10)); 
+
+
 
 
 

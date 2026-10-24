@@ -151,7 +151,7 @@ While following the instructions for each iteration, carefully read the instruct
 Implement the function `maxOfTwoNumbers` that takes two numbers as arguments and returns the bigger number.
 
 <br>
-
+const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 
 ### Iteration 2 | Find the Longest Word
