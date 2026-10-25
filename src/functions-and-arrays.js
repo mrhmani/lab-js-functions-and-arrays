@@ -3,19 +3,32 @@ function maxOfTwoNumbers(num1, num2) {
    return Math.max(num1, num2); 
 } 
 
-console.log(maxOfTwoNumbers(9, 10)); 
+console.log(maxOfTwoNumbers(9, 10));  
 
 
 
-
-
-
-// Iteration 2 | Find the Longest Word
+    // Iteration 2 | Find the Longest Word
 const words = ["mystery", "brother", "aviator", "crocodile", "pearl", "orchard", "crackpot"];
 
-function findLongestWord() {}
+function findLongestWord(words) { 
+
+    if (words.length === 0){
+        return null; 
+    }
 
 
+    let longestWord = words[0];  
+
+    for (let i = 0; i < words.length; i++) {    
+       if (words[i].length > longestWord.length) {
+        longestWord = words[i];  
+       }
+    }  
+    return longestWord;  
+}
+
+console.log(findLongestWord(words));   
+console.log(findLongestWord([])); 
 
 
 // Iteration 3 | Sum Numbers
