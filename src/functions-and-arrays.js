@@ -91,4 +91,17 @@ const words2 = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist(arr, wordSearch) { 
+     if (arr.length === 0) {
+        return null; 
+     } 
+
+     if (arr.includes(wordSearch)) {
+        return true;
+     } else {
+        return false; 
+     } 
+
+} 
+
+console.log(doesWordExist(words2, "subset")); // true
