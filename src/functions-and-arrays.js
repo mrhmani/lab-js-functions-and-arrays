@@ -59,12 +59,15 @@ console.log(sumNumbers(numbers));
 
 
 
-
 // Iteration 4 | Numbers Average
 
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers2) {
+    if (numbers2.length === 0) {
+        return 0;
+    }
+    
     let sum = 0;
        
     for (let i = 0; i < numbers2.length; i++) {  
@@ -73,7 +76,8 @@ function averageNumbers(numbers2) {
     return sum / numbers2.length;
 
 } 
-console.log(averageNumbers(numbers2)); 
+console.log(averageNumbers(numbers2));   
+console.log(averageNumbers([])); 
 
 
 
